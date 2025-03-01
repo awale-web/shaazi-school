@@ -300,3 +300,49 @@ nav ul li a.active {
   font-weight: bold;
   border-bottom: 2px solid gold;
 }
+/* Hero Section */
+.hero-video {
+  position: relative;
+  width: 100%;
+  height: 500px;  /* Adjust height as needed */
+  overflow: hidden;
+}
+
+#hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Ensures the video fills the container without distortion */
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);  /* Optional: Dark overlay for text visibility */
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3em;  /* Adjust font size as needed */
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #1e3a8a;  /* Change to match your brand colors */
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #2563eb;
+}
