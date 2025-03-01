@@ -1,0 +1,68 @@
+/* ========== Mobile Styles (For screens smaller than 768px) ========== */
+
+@media screen and (max-width: 768px) {
+    
+  /* ✅ Make Navigation Stack Vertically */
+  nav {
+      flex-direction: column; /* Stack navigation links */
+      align-items: center;
+  }
+
+  nav ul {
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+  }
+
+  .nav-tab {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      border-radius: 0;
+  }
+
+  /* ✅ Make the School Logo Smaller */
+  .school-logo {
+      width: 150px; /* Adjust size */
+      height: auto;
+      display: block;
+      margin: 0 auto; /* Center it */
+  }
+
+  /* ✅ Adjust Page Content for Small Screens */
+  .container {
+      width: 90%; /* Reduce width for small screens */
+      margin: auto; /* Center content */
+      text-align: center; /* Center text */
+  }
+
+  /* ✅ Make Gallery Images Responsive */
+  .gallery img {
+      width: 100%; /* Full width */
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 10px; /* Add smooth edges */
+  }
+
+  /* ✅ Style Contact Form for Mobile */
+  .contact-form {
+      width: 100%; /* Full width */
+      padding: 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+      width: 100%; /* Make form fields full width */
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+  }
+
+  /* ✅ Improve Buttons for Mobile */
+  button {
+      width: 100%;
+      padding: 12px;
+      font-size: 18px;
+      border-radius: 5px;
+  }
+}

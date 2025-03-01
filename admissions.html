@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - School Name</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header>
+        <img src="Images/logo.webp" alt="school logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="admissions.html" class="active">admissions</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Admissions</h2>
+        <p>Join our school and be part of a learning environment that nurtures excellence!</p>
+    
+        <h3>Admission Requirements</h3>
+        <ul>
+            <li>Completed application form</li>
+            <li>Birth certificate copy</li>
+            <li>Previous school report card</li>
+            <li>Medical report</li>
+        </ul>
+    
+        <h3>How to Apply</h3>
+        <p>Visit our school office or apply online by filling out the <a href="contact.html">contact form</a>.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bright Spark. All Rights Reserved.</p>
+    </footer>
+    <script>
+        // Show button when scrolling down
+        window.addEventListener("scroll", function () {
+          let button = document.getElementById("backToTop");
+          if (window.scrollY > 100) {
+            button.classList.add("show");
+          } else {
+            button.classList.remove("show");
+          }
+        });
+      
+        // Scroll to top function
+        function scrollToTop() {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+      </script>
+    <!-- Back to Top Button -->
+<button id="backToTop" onclick="scrollToTop()">⬆️ Top</button>
+</body>
+</html>

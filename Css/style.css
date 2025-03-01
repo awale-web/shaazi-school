@@ -1,0 +1,302 @@
+/* General Styles */
+body {
+  font-family:'Poppins', sans-serif; ;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+/* Sticky Navbar */
+nav {
+  position: fixed; /* Keeps navbar at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f5f5f5; /* Same background */
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 3px solid #ccc;
+  z-index: 1000; /* Ensures it's above other content */
+}
+/* Smooth transition for navbar on scroll */
+nav {
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Change background and add shadow when scrolling */
+.nav-scrolled {
+  background-color: #e0e0e0; /* Slightly darker background */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+/* Add margin to the main content so it doesn’t get hidden under the navbar */
+main {
+  margin-top: 60px; /* Adjust based on navbar height */
+}
+
+nav ul {
+  list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+/* Navigation tab buttons */
+.nav-tab {
+  background-color: white; /* White background */
+  color: black; /* Black text */
+  padding: 12px 20px;
+  margin: 0 5px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px 10px 0 0; /* Rounded corners on top */
+  box-shadow: 2px -2px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.nav-tab:hover {
+  background-color: #ffcc00;
+  color: #333; /* Light gray */
+}
+
+/* Active tab (current page) */
+.nav-tab.active {
+  background-color: #ffcc00;
+  color: #333;
+  border-bottom: 3px solid gold;
+  font-weight: bold;
+}
+/* Non-active tabs must stay visible */
+.nav-tab:not(.active) {
+  opacity: 1; /* Full visibility */
+}
+
+/* Page Content */
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Headings */
+h2 {
+  color: #004080;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: #0066cc;
+  border-bottom: 2px solid #004080;
+  padding-bottom: 5px;
+}
+
+/* Lists */
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.gallery img {
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Form */
+form {
+  background: #f9f9f9; 
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color:#ff6600;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color0.3s ease-in-out, transform 0.2s ease-in-out; ;
+}
+
+button:hover {
+  background-color:#cc5500;
+  transform: scale(1.05);;
+}
+/* General logo styling */
+.logo {
+  display: block;
+  max-width: 150px; /* Adjust size */
+  height: auto;
+  border-radius: 15px; /* Rounded corners */
+}
+
+/* Center logo in header */
+header {
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Logo inside navigation bar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+nav .logo {
+  height: 50px;
+  border-radius: 10px; /* Slightly rounded */
+}
+
+/* Logo in the footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+footer .logo {
+  height: 80px;
+  border-radius: 20px; /* More rounded */
+}
+/* Gallery Section */
+.gallery {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.gallery-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.3s ease-in-out;
+}
+/* Gallery Section */
+.gallery {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.gallery-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+/* Link Styling */
+a {
+  color: #007bff;  /* Default color */
+  text-decoration: none; /* Removes the underline */
+  font-weight: bold;
+  transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #ff6600; /* Changes color when hovered */
+  text-decoration: underline; /* Adds an underline on hover */
+}
+/* Back to Top Button */
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+/* Show button when scrolling */
+#backToTop.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#backToTop:hover {
+  background-color: #cc5500;
+}
+/* Active Navigation Link */
+nav ul li a.active {
+  color: #ffcc00; /* Highlight color */
+  font-weight: bold;
+  border-bottom: 2px solid gold;
+}
+/* Active Navigation Link */
+nav ul li a.active {
+  color: #ffcc00; /* Highlight color */
+  font-weight: bold;
+  border-bottom: 2px solid gold;
+}

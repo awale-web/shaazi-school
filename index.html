@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Spark - Home</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="Images/logo.webp" alt="school logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html" class="nav-tab">About Us</a></li>
+                <li><a href="admissions.html" class="nav-tab">Admissions</a></li>
+                <li><a href="academics.html" class="nav-tab">Academics</a></li>
+                <li><a href="gallery.html" class="nav-tab">Gallery</a></li>
+                <li><a href="contact.html" class="nav-tab">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Welcome to Bright Spark</h2>
+    <p>At Bright Spark, we are committed to academic excellence, character development, and nurturing talents. We provide a supportive environment where students can thrive in both academics and extracurricular activities.</p>
+
+    <h3>Why Choose Us?</h3>
+    <ul>
+        <li>✅ Highly qualified and experienced teachers</li>
+        <li>✅ Well-equipped classrooms and modern facilities</li>
+        <li>✅ A strong focus on discipline and character building</li>
+        <li>✅ A wide range of extracurricular activities</li>
+        <li>✅ A safe and secure learning environment</li>
+    </ul>
+
+    <h3>Our Programs</h3>
+    <p>We offer a well-rounded curriculum that includes:</p>
+    <ul>
+        <li>📘 Primary and Secondary Education</li>
+        <li>🎨 Art, Music, and Drama</li>
+        <li>💻 Computer and IT Training</li>
+        <li>🏆 Sports and Athletics</li>
+        <li>🔬 Science and Innovation Clubs</li>
+    </ul>
+
+    <h3>Latest News & Events</h3>
+    <p>Stay updated with the latest activities happening at our school:</p>
+    <ul>
+        <li><strong>📅 March 10:</strong> Science Fair Competition</li>
+        <li><strong>📅 April 5:</strong> Inter-School Sports Tournament</li>
+        <li><strong>📅 Dec 2nd:</strong> Annual Graduation Ceremony</li>
+    </ul>
+
+    <h3>Get in Touch</h3>
+    <p>Have questions? <a href="contact.html">Contact us</a> or visit us at our school for more information.</p>
+</main>
+    
+    <footer>
+     <img src="Images/logo.webp" alt="school logo" width="100px">
+    <p>&copy; 2025 Bright Spark. All Rights Reserved.</p>
+    </footer>
+    <script>
+        window.addEventListener("scroll", function () {
+          let navbar = document.querySelector("nav");
+          if (window.scrollY > 50) {
+            navbar.classList.add("nav-scrolled");
+          } else {
+            navbar.classList.remove("nav-scrolled");
+          }
+        });
+        // Show button when scrolling down
+  window.addEventListener("scroll", function () {
+    let button = document.getElementById("backToTop");
+    if (window.scrollY > 100) {
+      button.classList.add("show");
+    } else {
+      button.classList.remove("show");
+    }
+  });
+
+  // Scroll to top function
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+      </script>
+   
+   <!-- Back to Top Button -->
+<button id="backToTop" onclick="scrollToTop()">⬆️ Top</button>
+
+</body>
+</html>
