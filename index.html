@@ -74,6 +74,20 @@
     <p>&copy; 2025 Bright Spark. All Rights Reserved.</p>
     </footer>
     <script>
+      document.getElementById("contact-form").addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevent page refresh
+
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let message = document.getElementById("message").value;
+
+  if (name && email && message) {
+    alert("Thank you! Your message has been sent.");
+    document.getElementById("contact-form").reset(); // Clear form after submission
+  } else {
+    alert("Please fill in all fields.");
+  }
+});
         window.addEventListener("scroll", function () {
           let navbar = document.querySelector("nav");
           if (window.scrollY > 50) {
@@ -96,6 +110,31 @@
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
+  // Initialize EmailJS (Only do this once in your script)
+emailjs.init("CRirl8p7BAqGDd4hw"); // Replace with your actual EmailJS Public Key
+
+document.getElementById("contact-form").addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevents page reload
+
+  let serviceID = "service_m3in1w1";  // Replace with your actual EmailJS Service ID
+  let templateID = "template_uipu2ms";  // Replace with your actual EmailJS Template ID
+
+  let params = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+
+  emailjs.send(serviceID, templateID, params)
+    .then(() => {
+      alert("Message sent successfully!");
+      document.getElementById("contact-form").reset();
+    })
+    .catch((error) => {
+      alert("Failed to send message. Try again later.");
+      console.error("EmailJS Error:", error);
+    });
+});
       </script>
    
    <!-- Back to Top Button -->

@@ -133,27 +133,33 @@ ul li {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Contact Form */
-form {
-  background: #f9f9f9; 
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+#contact-form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-form label {
-  font-weight: bold;
-}
-
-form input, form textarea {
+#contact-form input, #contact-form textarea {
   width: 100%;
   padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
+#contact-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact-form button:hover {
+  background-color: #0056b3;
+}
 button {
   background-color:#ff6600;
   color: white;
